@@ -4,9 +4,9 @@ const {getAllTasks, getTask, createTaks, deleteTask, updateTask} = require('../c
 const router = Router()
 
 router.get('/tasks', getAllTasks)
-router.get('/tasks/10', getTask)
+router.get('/tasks/:id', getTask)
 router.post('/tasks', createTaks)
-router.delete('/tasks', deleteTask)
-router.put('/tasks', updateTask)
+router.delete('/tasks/:id', deleteTask)
+router.put('/tasks/:id', updateTask)
 
 module.exports = router
