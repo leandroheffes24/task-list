@@ -3,6 +3,7 @@ const {getAllTasks, getTask, createTaks, deleteTask, updateTask} = require('../c
 
 const router = Router()
 
+router.get('/', getAllTasks)
 router.get('/tasks', getAllTasks)
 router.get('/tasks/:id', getTask)
 router.post('/tasks', createTaks)
